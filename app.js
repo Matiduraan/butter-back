@@ -98,5 +98,6 @@ app.post("/fake-transactions", isAuthenticated, async (req, res) => {
 });
 
 app.listen(process.env.PORT || process.env.SERVER_PORT || 3001, () => {
+  console.log(`Server is running on port ${process.env.PORT || 3001}`);
   console.log("Press CTRL-C to stop");
 });
